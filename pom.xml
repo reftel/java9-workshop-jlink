@@ -12,6 +12,7 @@
   <modules>
     <module>api</module>
     <module>app</module>
+    <module>image</module>
   </modules>
 
   <properties>
@@ -29,8 +30,32 @@
           <artifactId>maven-compiler-plugin</artifactId>
           <version>${maven.compiler.plugin.version}</version>
         </plugin>
+        <plugin>
+          <artifactId>maven-jlink-plugin</artifactId>
+          <version>3.0.0-alpha-1</version>
+          <extensions>true</extensions>
+          <dependencies>
+            <dependency>
+              <groupId>org.ow2.asm</groupId>
+              <artifactId>asm</artifactId>
+              <version>6.2</version> <!-- Use newer version of ASM -->
+            </dependency>
+          </dependencies>
+          <configuration>
+            <!-- configuration elements goes here -->
+          </configuration>
+        </plugin>
       </plugins>
     </pluginManagement>
+    <plugins>
+      <plugin>
+        <artifactId>maven-jlink-plugin</artifactId>
+        <extensions>true</extensions>
+        <configuration>
+          <!-- configuration elements goes here -->
+        </configuration>
+      </plugin>
+    </plugins>
   </build>
 
 </project>
