@@ -1,6 +1,6 @@
 ## Setup
-Make sure you are using Java 10
-  - `java -version` and `mvn -version` should both show some Java 10 version/build
+Make sure you are using Java 11
+  - `java -version` and `mvn -version` should both show some Java 11 version/build
 
 
 
@@ -17,7 +17,7 @@ Make sure you are using Java 10
 ## Create the JRE using jlink
 Remember to change the path to the JDK to something that matches your installation location.
 
-`jlink --module-path "/c/java/jdk-10/jmods/;libs" --add-modules no.hamre.java9workshop.jlink.api,no.hamre.java9workshop.jlink.app --output image/`
+`jlink --module-path "/c/java/jdk-11/jmods/;libs" --add-modules no.hamre.java9workshop.jlink.api,no.hamre.java9workshop.jlink.app --output image/`
 
 ## Run the application from your JRE
 `cd image`
