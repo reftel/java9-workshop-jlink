@@ -35,7 +35,9 @@ This will create the custom JRE with the application in the `image` folder
 
 `./bin/java -m no.hamre.java9workshop.jlink.app/no.hamre.java9workshop.jlink.app.Main`
 
-## Using the maven-jlink-plugin
+## Using the maven-jlink-plugin 
+
+_This plugin does not work for Java 12_
 
 Chekout the branch `maven-plugin`.
 
