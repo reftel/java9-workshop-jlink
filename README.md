@@ -1,6 +1,6 @@
 # JLink example
 This is a minimal example of an application that can be modularized using JLink and
-distributed with it's own JRE containing only the required Java modules and this application.
+distributed with its own JRE containing only the required Java modules and this application.
 
 ## Structure
 The maven project has two modules to emulate a real modular application. The `api` module contains
